@@ -1,18 +1,18 @@
-
-$(document).foundation();
-
 var getBreweriesForm = document.querySelector("#getBreweriesForm");
 
 function handleSearchFormSubmit(event) 
 {  
     event.preventDefault();
 
+    // Clear error message.
+    document.querySelector("#errMsgArea").innerHTML = "";
+
     // Get city
     var city = document.getElementById("city").value;
 
     if (city == null || city.length < 1)
-    {
-        alert("Please enter a city.");
+    {        
+        document.querySelector("#errMsgArea").innerHTML = "<p id=\"red\">Please enter a city.</p>";
         return;
     }
         
@@ -25,7 +25,7 @@ function handleSearchFormSubmit(event)
     }
     else
     {
-        alert("Please select a State.");
+      document.querySelector("#errMsgArea").innerHTML = "<p id=\"red\">Please select a state.</p>";
         return;
     }
 
