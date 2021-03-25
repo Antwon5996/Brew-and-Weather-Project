@@ -4,3 +4,7 @@
 .columns {
     height: 100vh;
 }
+
+#red {
+    color: red;
+}
