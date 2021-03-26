@@ -10,6 +10,7 @@ function handleSearchFormSubmit(event)
     // Get city
     var city = document.getElementById("city").value;
 
+    // Validate city.
     if (city == null || city.length < 1)
     {        
         document.querySelector("#errMsgArea").innerHTML = "<p id=\"red\">Please enter a city.</p>";
@@ -19,6 +20,7 @@ function handleSearchFormSubmit(event)
     // Get state
     var states = document.querySelector("#states");
 
+    // Validate state
     if (states.selectedIndex > 0)
     {
         var statesStr = states.options[states.selectedIndex].text;
@@ -46,8 +48,12 @@ function handleSearchFormSubmit(event)
       return response.json();
     })
     .then(function (locRes)
-    {      
-      console.log(locRes);
+    {
+      // Convert array of JSON objects to Strings so that they can be stored.
+      var outputAsJSON = JSON.stringify(locRes);
+
+      // Persist array of Strings to localStorage.
+      localStorage.setItem("openBreweryDBResults", outputAsJSON);
     })
     .catch(function (error) 
     {
