@@ -1,0 +1,54 @@
+ * {
+   box-sizing: border-box;
+   overflow: hidden;
+ }
+
+ .column-left {
+   height: 100vh;
+   background-color: #0E75EF;
+ }
+
+ .column-right {
+   background-color: white;
+   height: 100vh;
+   padding: 0;
+ }
+
+ .column-left {
+   margin: 0;
+ }
+
+ .logo {
+   padding-top: 1rem;
+   width: 30px;
+ }
+
+ .top-bar {
+   margin: 0;
+   padding: 15px;
+
+ }
+
+ .side-bar {
+   /* background: red; */
+   height: 100vh;
+   border-right: 1px solid #0E75EF;
+   padding: 0px 20px;
+ }
+
+ .search {
+   position: relative;
+   padding-top: 1rem;
+ }
+
+ #weather {
+   margin: 15px;
+ }
+
+ .result {
+   height: 100vh;
+ }
+
+ .map {
+   height: 100vh;
+ }

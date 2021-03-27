@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css">
+  <link rel="stylesheet" href="./assets/result_page.css">
+  <title>Result Page</title>
+</head>
+
+<body>
+
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+      <div class="side-bar off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
+        <div class="row column text-center">
+          <br>
+          <img class="logo" src="./assets/images/logo-icon.svg">
+        </div>
+      </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="title-bar hide-for-large">
+          <div class="title-bar-left">
+            <button class="menu-icon"></button>
+            <span class="title-bar-title">Map</span>
+          </div>
+        </div>
+        <div class="callout secondary">
+          <div class="row column">
+            <div class="top-bar-left text-center hide-for-small">
+              <ul class="menu">
+                <img src="./assets/images/humbergur-menu.svg" alt="">
+                <li class="menu-text">Map</li>
+            </div>
+            <div class="top-bar-right">
+              <div id="weather">Weather</div>
+            </div>
+          </div>
+        </div>
+        <div class="row small-up-1 medium-up-2 large-up-2">
+          <div class="column result">
+            <input type="search" name="search" placeholder="Search.." class="animated-search-form">
+            <table class="stack unstriped hover">
+              <thead>
+                <tr>
+                  <th width="50%" class="text-left">Name</th>
+                  <th width="50%" class="text-right">Like</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-left">Name 1</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 2</td>
+                  <td class="text-right"><img src="/assets/images/solid-heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 3</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 4</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 5</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 6</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 7</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 8</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 9</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> <tr>
+                  <td class="text-left">Name 10</td>
+                  <td class="text-right"><img src="/assets/images/heart.png" alt</td> </tr> </tbody>
+                </table>
+          </div>
+          <div class="column map">
+            <img id="map" class="map" src="assets/images/map.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
