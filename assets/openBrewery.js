@@ -59,6 +59,7 @@ function handleSearchFormSubmit(event)
     {
       console.error(error);
     });
+
 }
 
 getBreweriesForm.addEventListener('submit', handleSearchFormSubmit);
