@@ -13,19 +13,20 @@
 </head>
 
 <body>
-    <div class="main-container row expanded">
-        <div class="left-hero medium-8 columns small-12 columns">
-            <!-- <div style="font-size: 40px; text-align: center; padding-top: 50%; font-weight: bold; color: #f5f5f5;">Brewery</div> -->
-            <div class="logo"></div>
+    <div class="container-fluid text-center">
+        <div class="left-hero columns small-12 large-8 align-self-top">
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </div>
         </div>
-        <div class  ="row">
-            <div class="small-12 medium-6 columns" id="search">
-                <div class="small-12 medium-5 columns">
-                    <input type="text" name="city" placeholder="City" />
+        <div class="right-hero columns small-12 large-4 algin-self-buttom">
+            <form class="form">
+                <h4 class="get-started-text">Get Started Here</h4>
+                <div class="input-group">
+                    <input type="text" class="input-group-field" placeholder="Enter City" id="search">
                 </div>
-                <div class="small-12 medium-5 columns">
-                    <input type="states" name="states" placeholder="States" id="states" />
-                    <select name="states" id="states" style="color: rgb(13, 161, 230);">
+                <div class="input-group">
+                    <select name="states" class="input-group-field" id="states">
                         <option value="" disabled selected>Select a State...</option>
                         <option value="Alabama">Alabama</option>
                         <option value="Alaska">Alaska</option>
@@ -78,82 +79,92 @@
                         <option value="Wisconsin">Wisconsin</option>
                         <option value="Wyoming">Wyoming</option>
                     </select>
+                    <button class="btn button expanded">Search</button>
                 </div>
-                <div class="small-12 medium-2 small-centered medium-uncentered columns">
-                    <a href="#" class="button postfix">Go</a>
-                  </div>
-
-            </div>
-        </div>
-        <div class=" right-hero text-center medium-4 columns small-12 columns">
-            <div class="right-hero-content">
-                <!-- <p style="color: rgb(13, 161, 230); font-size: 45px; padding-bottom: 20px; font-weight: bold;">Get Started Here</p> -->
-                <h2 class="text-center "><strong>Let Get Started Here</strong></h2>
-                <form>
-                    <input type="text" name="city" id="city" placeholder="City" style="color: rgb(13, 161, 230);">
-                    <select name="states" id="states" style="color: rgb(13, 161, 230);">
-                        <option value="" disabled selected>Select a State...</option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="Alaska">Alaska</option>
-                        <option value="Arizona">Arizona</option>
-                        <option value="Arkansas">Arkansas</option>
-                        <option value="California">California</option>
-                        <option value="Colorado">Colorado</option>
-                        <option value="Connecticut">Connecticut</option>
-                        <option value="Delaware">Delaware</option>
-                        <option value="Florida">Florida</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Hawaii">Hawaii</option>
-                        <option value="Idaho">Idaho</option>
-                        <option value="Illinois">Illinois</option>
-                        <option value="Indiana">Indiana</option>
-                        <option value="Iowa">Iowa</option>
-                        <option value="Kansas">Kansas</option>
-                        <option value="Kentucky">Kentucky</option>
-                        <option value="Louisiana">Louisiana</option>
-                        <option value="Maine">Maine</option>
-                        <option value="Maryland">Maryland</option>
-                        <option value="Massachusetts">Massachusetts</option>
-                        <option value="Michigan">Michigan</option>
-                        <option value="Minnesota">Minnesota</option>
-                        <option value="Mississippi">Mississippi</option>
-                        <option value="Missouri">Missouri</option>
-                        <option value="Montana">Montana</option>
-                        <option value="Nebraska">Nebraska</option>
-                        <option value="Nevada">Nevada</option>
-                        <option value="New Hamsphire">New Hamsphire</option>
-                        <option value="New Jersey">New Jersey</option>
-                        <option value="New Mexico">New Mexico</option>
-                        <option value="New York">New York</option>
-                        <option value="North Carolina">North Carolina</option>
-                        <option value="North Dakota">North Dakota</option>
-                        <option value="Ohio">Ohio</option>
-                        <option value="Oklahoma">Oklahoma</option>
-                        <option value="Oregon">Oregon</option>
-                        <option value="Pennsylvania">Pennsylvania</option>
-                        <option value="Rhode Island">Rhode Island</option>
-                        <option value="South Carolina">South Carolina</option>
-                        <option value="South Dakota">South Dakota</option>
-                        <option value="Tennessee">Tennessee</option>
-                        <option value="Texas">Texas</option>
-                        <option value="Utah">Utah</option>
-                        <option value="Vermont">Vermont</option>
-                        <option value="Virginia">Virginia</option>
-                        <option value="Washington">Washington</option>
-                        <option value="West Virginia">West Virginia</option>
-                        <option value="Wisconsin">Wisconsin</option>
-                        <option value="Wyoming">Wyoming</option>
-                    </select>
-                    <button class=" btn button expanded" style="color: white">Search</button>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+    <!-- <div class=" main-container row expanded">
+                <div class="left-hero medium-8 columns small-12 columns">
+                    <div class="logo"></div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-6 columns" id="search">
+                        <div class="small-12 medium-5 columns">
+                            <input type="text" name="city" placeholder="City" />
+                        </div>
+                        <div class="small-12 medium-5 columns">
+                            <input type="states" name="states" placeholder="States" id="states" />
+                            <select name="states" id="states" style="color: rgb(13, 161, 230);">
+                                <option value="" disabled selected>Select a State...</option>
+                                <option value="Alabama">Alabama</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="Arkansas">Arkansas</option>
+                                <option value="California">California</option>
+                                <option value="Colorado">Colorado</option>
+                                <option value="Connecticut">Connecticut</option>
+                                <option value="Delaware">Delaware</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Idaho">Idaho</option>
+                                <option value="Illinois">Illinois</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Iowa">Iowa</option>
+                                <option value="Kansas">Kansas</option>
+                                <option value="Kentucky">Kentucky</option>
+                                <option value="Louisiana">Louisiana</option>
+                                <option value="Maine">Maine</option>
+                                <option value="Maryland">Maryland</option>
+                                <option value="Massachusetts">Massachusetts</option>
+                                <option value="Michigan">Michigan</option>
+                                <option value="Minnesota">Minnesota</option>
+                                <option value="Mississippi">Mississippi</option>
+                                <option value="Missouri">Missouri</option>
+                                <option value="Montana">Montana</option>
+                                <option value="Nebraska">Nebraska</option>
+                                <option value="Nevada">Nevada</option>
+                                <option value="New Hamsphire">New Hamsphire</option>
+                                <option value="New Jersey">New Jersey</option>
+                                <option value="New Mexico">New Mexico</option>
+                                <option value="New York">New York</option>
+                                <option value="North Carolina">North Carolina</option>
+                                <option value="North Dakota">North Dakota</option>
+                                <option value="Ohio">Ohio</option>
+                                <option value="Oklahoma">Oklahoma</option>
+                                <option value="Oregon">Oregon</option>
+                                <option value="Pennsylvania">Pennsylvania</option>
+                                <option value="Rhode Island">Rhode Island</option>
+                                <option value="South Carolina">South Carolina</option>
+                                <option value="South Dakota">South Dakota</option>
+                                <option value="Tennessee">Tennessee</option>
+                                <option value="Texas">Texas</option>
+                                <option value="Utah">Utah</option>
+                                <option value="Vermont">Vermont</option>
+                                <option value="Virginia">Virginia</option>
+                                <option value="Washington">Washington</option>
+                                <option value="West Virginia">West Virginia</option>
+                                <option value="Wisconsin">Wisconsin</option>
+                                <option value="Wyoming">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="small-12 medium-2 small-centered medium-uncentered columns">
+                            <a href="#" class="button postfix">Go</a>
+                        </div> -->
+
     <!-- Compressed JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-    <script src="/assets/script.js"></script>
-</body>
-
-</html>
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
+    </script>
+    <script src="/assets/script.js"></sc
