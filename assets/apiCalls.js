@@ -1,3 +1,5 @@
+$(document).foundation();
+
 var getBreweriesForm = document.querySelector("#getBreweriesForm");
 
 function callOpenBreweryDB(city, state)
@@ -23,6 +25,8 @@ function callOpenBreweryDB(city, state)
     // Convert array of JSON objects to Strings so that they can be stored.
     var outputAsJSON = JSON.stringify(locRes);
 
+    // Clear cache
+    localStorage.removeItem("openBreweryDBResults");
     // Persist array of Strings to localStorage.
     localStorage.setItem("openBreweryDBResults", outputAsJSON);
   })
@@ -56,6 +60,8 @@ function callOpenWeatherMap(city, state)
     // Convert array of JSON objects to Strings so that they can be stored.
     var outputAsJSON = JSON.stringify(locRes);
 
+    // Clear cache
+    localStorage.removeItem("openWeatherMapResults");
     // Persist array of Strings to localStorage.
     localStorage.setItem("openWeatherMapResults", outputAsJSON);
   })
