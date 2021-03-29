@@ -39,7 +39,7 @@ function callOpenWeatherMap(city, state)
   url += city;
   url += ",";
   url += state;
-  url += ",US&appid=a51458addc0e1b5040d589d48c416643"
+  url += ",US&units=imperial&appid=a51458addc0e1b5040d589d48c416643"
       
   fetch(url)
   .then(function (response)
@@ -97,41 +97,9 @@ function handleSearchFormSubmit(event)
         return;
     }
 
-<<<<<<< HEAD
-    // Build URL
-    var url = "https://api.openbrewerydb.org/breweries?by_city="
-    url += city;
-    url += "&by_state=";
-    url += statesStr;
-        
-    fetch(url)
-    .then(function (response)
-    {
-      if (!response.ok)
-      {
-        throw response.json();
-      }
-
-      return response.json();
-    })
-    .then(function (locRes)
-    {
-      // Convert array of JSON objects to Strings so that they can be stored.
-      var outputAsJSON = JSON.stringify(locRes);
-
-      // Persist array of Strings to localStorage.
-      localStorage.setItem("openBreweryDBResults", outputAsJSON);
-    })
-    .catch(function (error) 
-    {
-      console.error(error);
-    });
-
-=======
     callOpenBreweryDB(city, statesStr);
     
     callOpenWeatherMap(city, statesStr);
->>>>>>> main
 }
 
 getBreweriesForm.addEventListener('submit', handleSearchFormSubmit);
