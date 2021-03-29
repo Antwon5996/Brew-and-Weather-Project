@@ -7,7 +7,7 @@ function callOpenBreweryDB(city, state)
   url += city;
   url += "&by_state=";
   url += state;
-      
+        
   fetch(url)
   .then(function (response)
   {
@@ -39,7 +39,7 @@ function callOpenWeatherMap(city, state)
   url += city;
   url += ",";
   url += state;
-  url += ",US&appid=a51458addc0e1b5040d589d48c416643"
+  url += ",US&units=imperial&appid=a51458addc0e1b5040d589d48c416643"
       
   fetch(url)
   .then(function (response)
@@ -98,8 +98,8 @@ function handleSearchFormSubmit(event)
     }
 
     callOpenBreweryDB(city, statesStr);
-    
-    callOpenWeatherMap(city, statesStr);
+
+    callOpenWeatherMap(city, statesStr); 
 }
 
 getBreweriesForm.addEventListener('submit', handleSearchFormSubmit);
