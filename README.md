@@ -1,11 +1,12 @@
 # Brew-and-Weather-Project
-Use the site to find a brewery and see what the weather is like in the area.
-6e1d66b6e700afc7ab55cd9fd5d7837a    -OpenBreweryDB
-AIzaSyA2EfrBUaD7asCKQFjq3GIBI_80dD8KTgU -GoogleMaps
+# Description
+Create a site that allows a user to get a list of breweries in a U.S. city.  Also, display the current weather conditions in that city and state.  Next, allow the user to designate a brewery as a favorite.  Last, display a list of the user's favorite breweries.
 
-<!-- https://maps.googleapis.com/maps/api/place/findplacefromtext/output?parameters
+#Technologies Used
+Foundation.css, CSS, HTML, GIT, and JavaScript.
 
-https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Minneapolis&inputtype=textquery&fields=geometry&key=AIzaSyA2EfrBUaD7asCKQFjq3GIBI_80dD8KTgU
+#Screenshot
+[Screenshot of First Page of Deployed Application](https://antwon5996.github.io/Brew-and-Weather-Project/assets/images/BrewAndWeatherScreenshot.PNG)
 
-https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=CityState&inputtype=textquery&fields=geometry&key=AIzaSyA2EfrBUaD7asCKQFjq3GIBI_80dD8KTgU -->
-
+#Link to Deployed Appliction
+[Link to First Page of Deployed Application](https://antwon5996.github.io/Brew-and-Weather-Project/)
