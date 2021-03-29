@@ -7,7 +7,7 @@ function callOpenBreweryDB(city, state)
   url += city;
   url += "&by_state=";
   url += state;
-      
+        
   fetch(url)
   .then(function (response)
   {
@@ -98,8 +98,8 @@ function handleSearchFormSubmit(event)
     }
 
     callOpenBreweryDB(city, statesStr);
-    
-    callOpenWeatherMap(city, statesStr);
+
+    callOpenWeatherMap(city, statesStr); 
 }
 
 getBreweriesForm.addEventListener('submit', handleSearchFormSubmit);
