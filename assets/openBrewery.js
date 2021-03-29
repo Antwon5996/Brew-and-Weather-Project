@@ -35,7 +35,7 @@ function callOpenBreweryDB(city, state)
 function callOpenWeatherMap(city, state)
 {
   // Build URL
-  var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+  var url = "https://api.openweathermap.org/data/2.5/weather?q=";
   url += city;
   url += ",";
   url += state;
