@@ -84,7 +84,7 @@ h3 {
     font-size: 2rem;
     border: none;
     background-color: #CFE0F4;
-    color: #0E75EF
+    color: #0E75EF;
 }
 
 .btn {
@@ -127,3 +127,5 @@ h3 {
         height: 50vh;
     }
 }
+
+
