@@ -107,7 +107,7 @@ function handleSearchFormSubmit(event)
 
     callOpenWeatherMap(city, statesStr); 
 
-    window.location.href = "searchResults.html"
+    window.location.href = "./searchResults.html"
 }
 
 getBreweriesForm.addEventListener('submit', handleSearchFormSubmit);
